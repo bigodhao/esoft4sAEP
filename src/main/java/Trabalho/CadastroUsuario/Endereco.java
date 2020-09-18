@@ -36,24 +36,7 @@ public class Endereco {
         }
         this.complemento = complemento;
     }
-    public String getEstado() {
-        return estado;
-    }
-    public String getCidade() {
-        return cidade;
-    }
-    public String getBairro() {
-        return bairro;
-    }
-    public String getLogradouro() {
-        return logradouro;
-    }
-    public String getNúmero() {
-        return número;
-    }
-    public String getComplemento() {
-        return complemento;
-    }
+    
     @Override
     public String toString() {
         return "Endereço [estado=" + estado + ", cidade=" + cidade + ", bairro=" + bairro + ", logradouro=" + logradouro + ", número=" + número + ", complemento=" + complemento + "] ";

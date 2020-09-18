@@ -10,9 +10,6 @@ public class Nome {
         this.valor = valor;
     }
 
-    public String getValor() {
-        return valor;
-    }
     @Override
     public String toString() {
         return "NOME=" + valor + ", ";

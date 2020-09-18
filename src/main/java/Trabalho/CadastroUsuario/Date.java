@@ -1,9 +1,9 @@
 package Trabalho.CadastroUsuario;
 
 public class Date {
-    int dia;
-    int mes;
-    int ano;
+    private int dia;
+    private int mes;
+    private int ano;
 
     public Date(int dia, int mes, int ano){
         if (validar(dia, mes, ano)){
