@@ -14,7 +14,7 @@ public class Cpf {
 
     @Override
     public String toString() {
-        return valor;
+        return ", CPF=" + valor + ", ";
     }
     
     public static boolean validar(String valor){

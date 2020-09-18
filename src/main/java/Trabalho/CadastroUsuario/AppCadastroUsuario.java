@@ -11,9 +11,12 @@ public class AppCadastroUsuario {
         
         Nome nomeDigitado = new Nome(JOptionPane.showInputDialog(null, "Digite o nome: "));
         Cpf cpfDigitado = new Cpf(JOptionPane.showInputDialog(null, "Digite o CPF: "));
+        Date dataDigitada = new Date(27,07,2001);
         Endereco enderecoDigitado = new Endereco("paraná", "maringá", "parq. hortência", "pion", "444", "casa");
-        Usuario novoUsuario = new Usuario(nomeDigitado.getValor(), cpfDigitado.getValor(), enderecoDigitado.toString(), 27072001, "jpaulofranca10@gmail.com", "12345");
+        Email emailDigitado = new Email(JOptionPane.showInputDialog(null, "Digite o email: "));
+        Usuario novoUsuario = new Usuario(nomeDigitado.toString(), cpfDigitado.toString(), enderecoDigitado.toString(), dataDigitada.toString(), emailDigitado.toString(), "12345");
         usuarios.add(novoUsuario);
+        System.out.println(novoUsuario);
     }
     
 }

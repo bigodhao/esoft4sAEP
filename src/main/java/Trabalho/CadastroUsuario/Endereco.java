@@ -56,7 +56,7 @@ public class Endereco {
     }
     @Override
     public String toString() {
-        return estado + cidade + bairro + logradouro + número + complemento;
+        return "Endereço [estado=" + estado + ", cidade=" + cidade + ", bairro=" + bairro + ", logradouro=" + logradouro + ", número=" + número + ", complemento=" + complemento + "] ";
     }
     private static boolean validar(String valor){
         if (valor == null){

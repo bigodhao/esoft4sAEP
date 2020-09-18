@@ -15,6 +15,6 @@ public class Nome {
     }
     @Override
     public String toString() {
-        return valor;
+        return "NOME=" + valor + ", ";
     }
 }
