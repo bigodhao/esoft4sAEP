@@ -1,21 +1,20 @@
 package Trabalho.EscalaçãoDeMotoristasRodoviarios;
 
 public class Linha extends Papel {
-    private Motorista motorista;
+    private int linha;
     private String caminho;
     private String pontoFinal;
+    private Motorista motorista;
 
-    public Linha(Motorista motorista, String caminho, String pontoFinal){
+    public Linha(int linha, String caminho, String pontoFinal){
         super();
-        this.motorista = motorista;
+        this.linha = linha;
         this.caminho = caminho;
         this.pontoFinal = pontoFinal;
-        this.motorista.getLinhas();
     }
 
     @Override
     public String getId() {
-        // TODO Auto-generated method stub
         return super.getId();
     }
 
@@ -23,12 +22,24 @@ public class Linha extends Papel {
         return caminho;
     }
 
-    public Motorista getMotorista() {
-        return motorista;
+    public int getLinha() {
+        return linha;
     }
 
     public String getPontoFinal() {
         return pontoFinal;
+    }
+
+    public Motorista getMotorista() {
+        return motorista;
+    }
+    public void setMotorista(Motorista motorista) {
+        this.motorista = motorista;
+    }
+
+    @Override
+    public String toString() {
+        return "CAMINHO: " + caminho + ", PONTO FINAL: " + pontoFinal + ", MOTORISTA: " + motorista;
     }
 
 
